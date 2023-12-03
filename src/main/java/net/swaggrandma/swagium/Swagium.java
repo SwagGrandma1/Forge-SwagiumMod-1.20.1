@@ -1,6 +1,7 @@
 package net.swaggrandma.swagium;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,6 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.swaggrandma.swagium.block.ModBlocks;
+import net.swaggrandma.swagium.item.ModCreativeModeTabs;
+import net.swaggrandma.swagium.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -22,6 +26,10 @@ public class Swagium
     public Swagium()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -36,7 +44,11 @@ public class Swagium
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+           event.accept(ModItems.SWAGIUM);
+           event.accept(ModItems.RAW_SWAGIUM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
