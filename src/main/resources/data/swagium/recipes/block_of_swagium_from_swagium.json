@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":
+  [
+    "sss",
+    "sss",
+    "sss"
+  ],
+  "key":
+  {
+    "s":
+    {
+      "item": "swagium:swagium_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "swagium:block_of_swagium"
+  }
+}

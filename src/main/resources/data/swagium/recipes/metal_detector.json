@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":
+  [
+    "  i",
+    " sc",
+    "s  "
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    },
+    "c":
+    {
+      "item": "minecraft:compass"
+    }
+  },
+  "result":
+  {
+    "item": "swagium:metal_detector"
+  }
+}

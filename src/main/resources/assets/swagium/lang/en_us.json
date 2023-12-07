@@ -1,10 +1,16 @@
 {
 
-  "item.swagium.swagium" : "Swagium",
+  "item.swagium.swagium_ingot" : "Swagium Ingot",
   "item.swagium.raw_swagium" : "Raw Swagium",
+  "item.swagium.swagberry" : "Swagberry",
+  "item.swagium.metal_detector" : "Metal Detector",
+  "item.swagium.swagium_sapling" : "Swagium Sapling",
 
 
   "block.swagium.block_of_swagium": "Block Of Swagium",
+  "block.swagium.swagium_ore": "Swagium Ore",
+  "block.swagium.deepslate_swagium_ore": "Deepslate Swagium Ore",
+  "block.swagium.kill_block": "Kill Block",
 
 
   "creativetab.swagium_tab" : "Swagium"

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients":
+  [
+    {
+      "item": "swagium:block_of_swagium"
+    }
+  ],
+  "result":
+  {
+    "item": "swagium:swagium_ingot",
+    "count": 9
+  }
+}

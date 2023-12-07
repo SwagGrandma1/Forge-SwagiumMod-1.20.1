@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "swagium:item/swagium"
+    "layer0": "swagium:item/swagium_sapling"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1,
+  "group": "swagium_ingot",
+  "ingredient": {
+    "item": "swagium:raw_swagium"
+  },
+  "result": "swagium:swagium_ingot"
+}

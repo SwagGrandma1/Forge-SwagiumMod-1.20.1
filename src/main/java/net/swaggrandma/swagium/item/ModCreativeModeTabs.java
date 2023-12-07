@@ -20,9 +20,16 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creativetab.swagium_tab"))
                     .displayItems((pParameters, pOutput) ->
                     {
-                        pOutput.accept(ModItems.SWAGIUM.get());
+                        pOutput.accept(ModItems.SWAGIUM_INGOT.get());
                         pOutput.accept(ModItems.RAW_SWAGIUM.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.SWAGBERRY.get());
+                        pOutput.accept(ModItems.SWAGIUM_SAPLING.get());
+
                         pOutput.accept(ModBlocks.BLOCK_OF_SWAGIUM.get());
+                        pOutput.accept(ModBlocks.KILL_BLOCK.get());
+                        pOutput.accept(ModBlocks.SWAGIUM_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SWAGIUM_ORE.get());
                     }).build());
     public static void register(IEventBus eventBus)
     {

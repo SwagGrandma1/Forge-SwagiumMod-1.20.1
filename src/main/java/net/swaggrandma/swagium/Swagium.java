@@ -46,7 +46,7 @@ public class Swagium
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
-           event.accept(ModItems.SWAGIUM);
+           event.accept(ModItems.SWAGIUM_INGOT);
            event.accept(ModItems.RAW_SWAGIUM);
         }
     }
