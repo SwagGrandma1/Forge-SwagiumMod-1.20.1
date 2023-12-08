@@ -1,6 +1,7 @@
 package net.swaggrandma.swagium.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,6 +27,9 @@ public class ModItems
     //advanced items
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> SWAGIUM_PICKAXE = ITEMS.register("swagium_pickaxe", () -> new PickaxeItem(ModToolTiers.SWAGIUM,
+            4, 5, new Item.Properties()));
 
 
     //end

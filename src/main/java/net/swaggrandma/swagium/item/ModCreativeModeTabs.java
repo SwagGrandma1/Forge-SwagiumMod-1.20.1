@@ -25,6 +25,7 @@ public class ModCreativeModeTabs
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SWAGBERRY.get());
                         pOutput.accept(ModItems.SWAGIUM_SAPLING.get());
+                        pOutput.accept(ModItems.SWAGIUM_PICKAXE.get());
 
                         pOutput.accept(ModBlocks.BLOCK_OF_SWAGIUM.get());
                         pOutput.accept(ModBlocks.KILL_BLOCK.get());

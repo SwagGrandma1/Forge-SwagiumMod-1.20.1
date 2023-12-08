@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base":
+  {
+    "parent": "swagium:item/swagium_pickaxe_3d"
+  },
+  "perspectives":
+  {
+    "gui":
+    {
+      "parent": "swagium:item/swagium_pickaxe_2d"
+    },
+    "ground":
+    {
+      "parent": "swagium:item/swagium_pickaxe_2d"
+    },
+    "fixed":
+    {
+      "parent": "swagium:item/swagium_pickaxe_2d"
+    }
+  }
+}
